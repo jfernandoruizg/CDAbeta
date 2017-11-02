@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  destino: MyString
+  origen: MyString
+  hsalida: 2017-10-09 08:10:56
+  clasesdisponibles: MyString
+  precio: 
+  tevuelo: 2017-10-09 08:10:56
+
+two:
+  destino: MyString
+  origen: MyString
+  hsalida: 2017-10-09 08:10:56
+  clasesdisponibles: MyString
+  precio: 
+  tevuelo: 2017-10-09 08:10:56

@@ -1,0 +1,38 @@
+<%= render 'HojasDeEstilos'%>
+<div class="slider animated bounceInUp">
+  <ul class="slides">
+    <li>
+      <img  <%= image_tag "bienvenida.jpg" %> <!-- random image -->
+    </li>
+    <li>
+      <img class="animated bounceInDown" <%= image_tag "2.jpg"%><!-- random image -->
+      <div class="caption left-align">
+        <h3 class="light grey-text text-darken-4">Left Aligned Caption</h3>
+        <h5 class="light grey-text text-darken-4">Here's our small slogan.</h5>
+      </div>
+    </li>
+    <li>
+      <img class="img-thumbnail , animated bounceInDown" <%= image_tag "3.jpg"%> <!-- random image -->
+      <div class="caption right-align">
+        <h3 class="light grey-text text-darken-4">Right Aligned Caption</h3>
+        <h5 class="light grey-text text-darken-4">Here's our small slogan.</h5>
+      </div>
+    </li>
+    <li>
+            <img class="img-thumbnail , animated bounceInDown" <%= image_tag "4.jpg"%><!-- random image -->
+      <div class="caption center-align">
+        <h3 class="light grey-text text-darken-4">This is our big Tagline!</h3>
+        <h5 class="light grey-text text-darken-4">Here's our small slogan.</h5>
+      </div>
+    </li>
+  </ul>
+</div>
+<script type="text/javascript">
+ $(document).ready(function(){
+    $('.slider').slider({full_width: true});
+  });
+</script>
+
+<script type="text/javascript">
+$('.carousel.carousel-slider').carousel({full_width: true});
+</script>

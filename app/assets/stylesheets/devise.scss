@@ -1,0 +1,52 @@
+.bodyfondologin
+{
+background-image: url(avionlogin.png);
+min-height:100%;
+  -webkit-background-size: cover;
+     -moz-background-size: cover;
+       -o-background-size: cover;
+          background-size: cover;
+
+}
+
+.divlogin {
+  position: relative;
+  width: 250px;
+  margin: 50px;
+  background: rgba(130,130,130,.3);
+  padding: 20px 22px;
+  border: 1px solid;
+  border-top-color: rgba(255,255,255,.4);
+  border-left-color: rgba(255,255,255,.4);
+  border-bottom-color: rgba(60,60,60,.4);
+  border-right-color: rgba(60,60,60,.4);
+}
+
+.principal{
+  height:100px;
+    width:1300px;
+     text-align:center;
+     position: relative;
+     top: 80px;
+
+}
+.centrar
+{
+
+  position: relative;
+  width:  300px;
+  margin: 50px;
+  left: 450px;
+
+  background: rgba(0,37,33,.1);
+  padding: 20px 22px;
+  border: 1px solid;
+  border-top-color: rgba(255,255,255,.4);
+  border-left-color: rgba(255,255,255,.4);
+  border-bottom-color: rgba(60,60,60,.4);
+  border-right-color: rgba(60,60,60,.4);
+  -webkit-box-shadow: 0px 4px 270px 54px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 4px 270px 54px rgba(0,0,0,0.75);
+box-shadow: 0px 4px 270px 54px rgba(0,0,0,0.75);
+
+}

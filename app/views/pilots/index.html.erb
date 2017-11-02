@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Pilots</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Nombrec</th>
+      <th>Ncedula</th>
+      <th>Nlicencia</th>
+      <th>Fcontratacion</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @pilots.each do |pilot| %>
+      <tr>
+        <td><%= pilot.nombrec %></td>
+        <td><%= pilot.ncedula %></td>
+        <td><%= pilot.nlicencia %></td>
+        <td><%= pilot.fcontratacion %></td>
+        <td><%= link_to 'Show', pilot %></td>
+        <td><%= link_to 'Edit', edit_pilot_path(pilot) %></td>
+        <td><%= link_to 'Destroy', pilot, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Pilot', new_pilot_path %>

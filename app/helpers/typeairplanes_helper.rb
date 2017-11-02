@@ -1,0 +1,2 @@
+module TypeairplanesHelper
+end

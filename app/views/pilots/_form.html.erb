@@ -1,0 +1,39 @@
+<%=render 'HojasDeEstilos'%>
+<%= form_with(model: pilot, local: true) do |form| %>
+  <% if pilot.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(pilot.errors.count, "error") %> prohibited this pilot from being saved:</h2>
+
+      <ul>
+      <% pilot.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :nombrec %>
+    <%= form.text_field :nombrec, id: :pilot_nombrec %>
+  </div>
+
+  <div class="field">
+    <%= form.label :ncedula %>
+    <%= form.text_field :ncedula, id: :pilot_ncedula %>
+  </div>
+
+  <div class="field">
+    <%= form.label :nlicencia %>
+    <%= form.text_field :nlicencia, id: :pilot_nlicencia %>
+  </div>
+
+  <div class="field">
+    <%= form.label :fcontratacion %>
+    <%= form.date_select :fcontratacion, id: :pilot_fcontratacion %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
+<%=render 'scripts'%>

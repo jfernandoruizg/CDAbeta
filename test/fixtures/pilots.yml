@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  nombrec: MyString
+  ncedula: MyString
+  nlicencia: MyString
+  fcontratacion: 2017-10-09
+
+two:
+  nombrec: MyString
+  ncedula: MyString
+  nlicencia: MyString
+  fcontratacion: 2017-10-09

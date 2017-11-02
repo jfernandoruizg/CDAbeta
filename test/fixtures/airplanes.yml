@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  matricula: MyString
+  tipo: MyString
+  modelo: MyString
+  nasientos: 1
+  fadquisicion: 2017-10-09
+
+two:
+  matricula: MyString
+  tipo: MyString
+  modelo: MyString
+  nasientos: 1
+  fadquisicion: 2017-10-09

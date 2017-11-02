@@ -1,0 +1,45 @@
+<%=render 'HojasDeEstilos'%>
+<%= form_with(model: airplane, local: true) do |form| %>
+  <% if airplane.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(airplane.errors.count, "error") %> prohibited this airplane from being saved:</h2>
+
+      <ul>
+      <% airplane.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :matricula %>
+    <%= form.text_field :matricula, id: :airplane_matricula %>
+  </div>
+  <div class="field">
+    <%= form.label :modelo %>
+    <%= form.text_field :modelo, id: :airplane_modelo %>
+  </div>
+
+  <div class="field">
+    <%= form.label :nasientos %>
+    <%= form.number_field :nasientos, id: :airplane_nasientos %>
+  </div>
+
+  <div class="field">
+   <%= form.label :fadquisicion %>
+    <%= form.date_select :fadquisicion, id: :airplane_fadquisicion %>
+  </div>
+
+
+
+  <div class="field">
+    <%= form.label :"types airplane" %>
+    <%= form.select :typeairplane_id ,options_for_select(Typeairplane.all.map{|s|[s.tipo,s.id]}),{}, id: :typeairplane_id %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
+<%=render 'scripts'%>

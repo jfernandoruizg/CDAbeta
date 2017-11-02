@@ -1,0 +1,48 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.seccion1 {
+		background: url(avion5.jpg) 10% 0 no-repeat fixed;
+		min-height: 700px;
+		margin:  auto;
+		width: 100%;
+		max-width: auto;
+		position: relative;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+  }
+	.seccion2 {
+			background: url(avion6.jpg) 50% 0 no-repeat fixed;
+			min-height: 700px;
+			margin: 0 auto;
+			width: 100%;
+			max-width: auto;
+			position: relative;
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			-o-background-size: cover;
+			background-size: cover;
+	  }
+		.seccion3 {
+				background: url(avion7.jpg) 50% 0 no-repeat fixed;
+				min-height: 700px;
+				margin: 0 auto;
+				width: 100%;
+				max-width: auto;
+				position: relative;
+				-webkit-background-size: cover;
+				-moz-background-size: cover;
+				-o-background-size: cover;
+				background-size: cover;
+			}
+.sombra{
+	top: 130px;
+	left: 10px;
+	-webkit-box-shadow: 10px 10px 156px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 156px 0px rgba(0,0,0,0.75);
+box-shadow: 10px 10px 156px 0px rgba(0,0,0,0.75);
+
+}
+.negro{color:#002521;}

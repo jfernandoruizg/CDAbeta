@@ -1,0 +1,80 @@
+<%=render 'HojasDeEstilos'%>
+<%= form_with(model: flight, local: true) do |form| %>
+  <% if flight.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(flight.errors.count, "error") %> prohibited this flight from being saved:</h2>
+
+      <ul>
+      <% flight.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+<div class="row">
+   <form class="col s12">
+     <div class="row">
+  <div class="field col s3">
+    <%= form.label :destino %>
+    <%= form.text_field :destino, id: :flight_destino %>
+
+  </div>
+  <div class="field col s3">
+    <%= form.label :origen %>
+    <%= form.text_field :origen, id: :flight_origen %>
+  </div>
+  <div class="field col s2">
+      <%= form.label :"Fecha De Salida"%>
+    <%= form.date_select :fsalida, id: :fsalida%>
+  </div>
+  <div class="field col s2">
+    <%= form.label :"Hora De Salida" %>
+    <%= form.time_select :hsalida, id: :flight_hsalida %>
+  </div>
+  <div class="field col s2">
+    <%= form.label :"tiempo estimado de vuelo" %>
+    <%= form.time_select :tevuelo, id: :flight_tevuelo %>
+  </div>
+</div>
+
+
+
+
+
+
+<div class="row">
+  <div class="field col s3">
+    <%= form.label :clasesdisponibles %>
+    <%= form.text_field :clasesdisponibles, id: :flight_clasesdisponibles %>
+  </div>
+  <div class="field col s3">
+    <%= form.label :precio %>
+    <%= form.text_field :precio, id: :flight_precio %>
+  </div>
+
+</div>
+
+
+
+<div class="row">
+  <div class="field col s1">
+    <%= form.label :airplane %>
+    <%= form.select :airplane_id,options_for_select(Airplane.all.map{|s|[s.matricula,s.id]}),{}, id: :airplane_id %>
+  </div>
+  <div class="field col s3">
+    <%= form.label :pilot %>
+    <%= form.select :pilot_id ,options_for_select(Pilot.all.map{|s|[s.nombrec,s.id]}),{}, id: :pilot_id %>
+  </div>
+</div>
+
+
+
+  <div class="actions ">
+    <%= form.submit %>
+  </div>
+
+</form>
+</div>
+<% end %>
+<%=render 'scripts'%>
